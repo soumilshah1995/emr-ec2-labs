@@ -1,0 +1,1 @@
+    curl -s https://shell.duckdb.org/data/tpch/0_01/parquet/customer.parquet | aws s3 cp - s3://XXX/raw/customer.parquet
