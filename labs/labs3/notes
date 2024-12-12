@@ -1,0 +1,12 @@
+# Get IP for EMR
+aws emr describe-cluster --cluster-id XXXX --query 'Cluster.MasterPublicDnsName' --output text
+
+
+# Give Permission
+chmod 600 XXXX
+
+# SSH into Cluster
+ssh -i  XXXX hadoop@XXX
+
+# Check bootstrap Logs
+cat /var/log/bootstrap-actions/1/stdout
