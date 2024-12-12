@@ -1,0 +1,15 @@
+aws s3 cp /Users/soumilshah/IdeaProjects/lakehouse-spark/emr-ec2/create_cluster/test_job.py  s3://soumil-dev-bucket-1995/jobs/test_job.py
+
+
+
+SUBMIT JOBS STEP FUNCTIONS
+{
+  "clusterId": "XX",
+  "stepName": "MyStepName",
+  "args": [
+    "spark-submit",
+    "--deploy-mode",
+    "cluster",
+    "s3://soumil-dev-bucket-1995/jobs/test_job.py"
+  ]
+}
