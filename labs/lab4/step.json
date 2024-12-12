@@ -1,0 +1,40 @@
+{
+  "Comment": "Submit a job to an existing EMR cluster",
+  "StartAt": "AddEMRStep",
+  "States": {
+    "AddEMRStep": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::elasticmapreduce:addStep.sync",
+      "Parameters": {
+        "ClusterId.$": "$.clusterId",
+        "Step": {
+          "Name.$": "$.stepName",
+          "ActionOnFailure": "CONTINUE",
+          "HadoopJarStep": {
+            "Jar": "command-runner.jar",
+            "Args.$": "$.args"
+          }
+        }
+      },
+      "Next": "SuccessState",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.TaskFailed"
+          ],
+          "Next": "FailState"
+        }
+      ]
+    },
+    "SuccessState": {
+      "Type": "Pass",
+      "Result": "Job completed successfully!",
+      "End": true
+    },
+    "FailState": {
+      "Type": "Fail",
+      "Error": "JobFailed",
+      "Cause": "The EMR job failed to complete."
+    }
+  }
+}
