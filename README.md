@@ -23,7 +23,8 @@ Welcome to the EMR on EC2 Labs repository! This series of hands-on labs is desig
 ### Lab 3: Getting Started with EMR on EC2 - Learning About EMR Bootstrapping Hands-On
 - **Description:** Explore the concept of EMR bootstrapping to customize your cluster and environment setup.
 - **Lab Link:** [Lab 3](https://github.com/soumilshah1995/emr-ec2-labs/tree/main/labs/labs3)
-- **Video Tutorial:** *Coming Soon!*
+- **Video Tutorial:** [Watch on YouTube](https://youtu.be/SRSTYlOzfhU)
+
 
 ---
 
