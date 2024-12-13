@@ -33,7 +33,8 @@ Welcome to the EMR on EC2 Labs repository! This series of hands-on labs is desig
 ### Lab 4: Getting Started with EMR on EC2 - Learning How to  Orchestrate Job using Step Function  and submit jobs as steps
 - **Description:** Description: Description: This lab demonstrates how to use AWS Step Functions to orchestrate jobs on Amazon EMR. You'll learn how to submit jobs to EMR and manage their workflows. If a job succeeds, it transitions to a success state; if it fails, it transitions to a failure state.
 - **Lab Link:** [Lab 4](https://github.com/soumilshah1995/emr-ec2-labs/tree/main/labs/lab4)
-- **Video Tutorial:** *Coming Soon!*
+- **Video Tutorial:** [Watch on YouTube](https://youtu.be/y8oZXu-sbPE)
+
 
 ---
 
