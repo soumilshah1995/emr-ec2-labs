@@ -41,7 +41,7 @@ Welcome to the EMR on EC2 Labs repository! This series of hands-on labs is desig
 ---
 
 ### Lab 5: Getting Started with EMR on EC2 -Learn How to Read DynamoDB Tables  as Hive External tables #5
-- **Lab Link:** [Lab 4](https://github.com/soumilshah1995/emr-ec2-labs/tree/main/labs/lab4)
+- **Lab Link:** [Lab 5](https://github.com/soumilshah1995/emr-ec2-labs/tree/main/lab5)
 
 
 
