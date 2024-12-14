@@ -1,0 +1,30 @@
+aws dynamodb create-table \
+    --table-name user \
+    --attribute-definitions AttributeName=user_id,AttributeType=S \
+    --key-schema AttributeName=user_id,KeyType=HASH \
+    --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 \
+    --region us-east-1
+
+
+aws dynamodb put-item \
+    --table-name user \
+    --item '{"user_id": {"S": "user1"}, "name": {"S": "Alice"}, "email": {"S": "alice@example.com"}}' \
+    --region us-east-1
+
+aws dynamodb put-item \
+    --table-name user \
+    --item '{"user_id": {"S": "user2"}, "name": {"S": "Bob"}, "email": {"S": "bob@example.com"}}' \
+    --region us-east-1
+
+aws dynamodb put-item \
+    --table-name user \
+    --item '{"user_id": {"S": "user3"}, "name": {"S": "Charlie"}, "email": {"S": "charlie@example.com"}}' \
+    --region us-east-1
+
+aws dynamodb put-item \
+    --table-name user \
+    --item '{"user_id": {"S": "user4"}, "name": {"S": "Soumil"}, "email": {"S": "soumil@example.com"}}' \
+    --region us-east-1
+
+
+aws s3 cp /Users/soumilshah/IdeaProjects/emr-labs/emr-ec2/create_cluster/analytics.sql  s3://soumil-dev-bucket-1995/jobs/analytics.sql
