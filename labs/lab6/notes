@@ -1,0 +1,24 @@
+
+
+UPLOAD FILES ON S#
+aws s3 cp /Users/soumilshah/IdeaProjects/emr-labs/e6data/emr-cluster/shell-scripts/install_ray.sh  s3://soumil-dev-bucket-1995/scripts/install_ray.sh
+aws s3 cp /Users/soumilshah/IdeaProjects/emr-labs/e6data/emr-cluster/shell-scripts/hello_ray.py  s3://soumil-dev-bucket-1995/scripts/hello_ray.py
+
+# Get IP for EMR
+aws emr describe-cluster --cluster-id XXX --query 'Cluster.MasterPublicDnsName'
+
+
+# Give Permission
+chmod 600 <PATH TO SSH KEY>
+
+# SSH into Cluster
+ssh -i  <PATH TO SSH KEY>  hadoop@XXX
+
+
+ssh -i <PATH TO SSH KEY>  -L 8265:localhost:8265 hadoop@XXXX
+
+
+
+
+
+
