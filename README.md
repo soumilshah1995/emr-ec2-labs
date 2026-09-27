@@ -13,6 +13,7 @@ Welcome to the EMR on EC2 Labs repository! This series of hands-on labs is desig
 | Lab 5       | Getting Started with EMR on EC2 - Learn How to Read DynamoDB Tables as Hive External Tables       | [Lab 5](https://github.com/soumilshah1995/emr-ec2-labs/tree/main/labs/lab5)                                         | [Watch on YouTube](https://www.youtube.com/watch?v=cqHZqObzddI)             |
 | Lab 6       | Creating a Ray Cluster on EMR on EC2 and Submitting Your First Ray Job                            | [Lab 6](https://github.com/soumilshah1995/emr-ec2-labs/tree/main/labs/lab6)                                     | [Watch on YouTube](https://www.youtube.com/watch?v=raUxzl0EJ5c&t=1s)        |
 | Lab 7       | Lab 7: Learn How to Speed Up EMR Bootstrapping with a Custom AMI                  | [Lab 7](https://github.com/soumilshah1995/emr-ec2-labs/tree/main/labs/lab7)                                     | [Watch on YouTube](https://youtu.be/03pwOkdax1Y)                            |
+| Lab 8       | Interactive PySpark Anywhere with Spark Connect on EMR on EC2                     | [Lab 8](https://github.com/soumilshah1995/emr-ec2-labs/tree/main/labs/Lab8)                                     | Coming soon                                                                 |
 
 ---
 
